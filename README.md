@@ -7,25 +7,71 @@ Domino Pizza Clone 🍕
 
 ---
 
-## 📌 주요 기능
-- **홈 / 프로모션**
-  - 메인 배너 캐러셀
-  - 한정 이벤트 & 할인 섹션
-- **메뉴 페이지**
-  - 피자 / 사이드 / 음료 필터
-  - 인기순·가격순 정렬
-- **제품 상세**
-  - 사이즈 / 도우 / 토핑 옵션
-  - 실시간 가격 합계 반영
-- **장바구니**
-  - 수량 변경 & 옵션 수정
-  - 합계/할인 계산
-- **주문 플로우**
-  - 배달 vs 포장 선택
-  - 주소 검색(모달)
-  - 결제 전 검증
-- **매장 찾기**
-  - 지도 기반 매장 위치 검색
+### 🍕 Domino Clone (KR) — HTML/CSS/JS
+
+008_Project_domino · 도미노피자 코리아 웹사이트를 토대로 만든 학습용 클론 프로젝트입니다.
+반응형 헤더/네비, 배너 슬라이더, 매장검색(카카오 지도), 이벤트/제휴/쿠폰 등 실사용 흐름을 따라가며 UI/UX와 퍼블리싱 역량을 훈련했습니다.
+⚠️ 이 프로젝트는 교육 목적의 포트폴리오이며 도미노피자와 어떠한 제휴/관계도 없습니다. 로고·이미지는 학습 용도로만 사용했습니다.
+
+---
+
+### ✨ 주요 기능
+
+헤더/GNB: 스크롤 고정(Sticky), 1/2뎁스 메뉴, ‘더보기’ 토글 드롭다운
+
+메인 배너 슬라이더: jQuery bxSlider 기반 자동 재생·페이저·양옆 컨트롤
+
+카드형 프로모션 섹션: 로그인 유도 카드, 혜택 배너
+
+하단 배너 롤링: 서브 프로모션 이미지 캐러셀
+
+메뉴 페이지: 탭형 카테고리 · 카드 리스트
+
+매장찾기: 카카오 지도 SDK + 매장 마커, 스위치형 할인 필터(텍스트 ON/OFF)
+
+이벤트/제휴/쿠폰/기프트: 실제 플로우를 모사한 정적 페이지 구성
+
+공통 컴포넌트: header.html, footer.html 샘플 및 전역 스타일/스크립트
+
+---
+
+### 🗂️ 페이지 구성
+
+404.html — 404 페이지
+
+costomer_compliment.html — 고객센터(문의/칭찬)
+
+ecoupon_instruction.html — E-쿠폰 이용안내
+
+ecoupon_order.html — E-쿠폰 주문
+
+eventAff_Affiliation.html — 제휴/할인
+
+eventAff_Affilliation_hcard.html — 제휴/혜택 상세(H-Card)
+
+eventAff_event.html — 이벤트
+
+footer.html — 공통 푸터(샘플)
+
+franchise.html — 가맹/창업
+
+gift.html — e-기프트
+
+header.html — 공통 헤더(샘플)
+
+index.html — 메인
+
+login.html — 로그인
+
+menu.html — 메뉴
+
+notification_news.html — 공지/뉴스
+
+sign_up.html — 회원가입
+
+store_search.html — 매장찾기
+
+각 페이지는 /css, /js, /images 자원을 공유합니다.
 
 ---
 
