@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+
+/* 
+* {
+    outline: 1px solid red;
+} 디버깅용
+*/
+
+/* 박스 여백 없애기 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Roboto','Noto',sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.body-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.top-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 85px;
+    margin: 20px 0;
+}
+.top-wrap img{
+    width: 155px;
+    height: 34px;
+}
+.top-wrap .location img{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.top-wrap .location{
+    border-bottom: 1px solid #000;
+}
+.top-wrap .location a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #111111;
+    letter-spacing: -0.75px;
+    line-height: 30px;
+    cursor: pointer;
+    width: 345px;
+    height: 31px;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    position: relative;
+}
+.top-wrap .nav{
+    font-size: 14px;
+    font-weight: 500;
+    color: #111111;
+    letter-spacing: -0.75px;
+    line-height: 39px;
+    cursor: pointer;
+    width: auto;
+    height: 59px;
+    padding: 10px;
+    
+}
+.top-wrap .nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.top-wrap .nav ul li{
+    padding: 10px;
+}
+.top-wrap .nav ul li #select-type{
+    font-size: 12px;
+    letter-spacing: -0.75px;
+    color: #888888;
+    border-radius: 13.5px;
+    border-color: rgb(221, 221, 221);
+    padding: 0 13px;
+    width: 72px;
+    height: 27px;
+    vertical-align: middle;
+}
+
+.gnb-wrap{
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    position: relative;
+}
+.gnb-wrap .gnb{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+    line-height: 54px;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* gnb-wrap 고정 시 스타일 */
+.gnb-wrap.fixeds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 살짝 음영 */
+  transition: all 0.3s ease;
+}
+
+/* 안쪽 메뉴 정렬은 기존 gnb 유지 */
+.gnb-wrap.fixeds .gnb > ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.gnb li a{
+    position: relative;
+     display: inline-block;
+    text-decoration: none;
+    color: #111;
+    padding: 10px 0; /* 좌우 패딩 제거하여 글씨에 딱 붙게 */
+}
+.gnb li a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    width: 0;
+    height: 2px;
+    background-color: #111;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+  
+.gnb li a:hover::after {
+    width: 80%;
+}
+
+/* GNB 상단에 고정 ============================= */
+.gnb {
+    position: relative;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.gnb.fixed {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 999;
+    border: none;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.gnb.fixed > ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* 좌우 여백 여유 주기 */
+}
+
+/* =================================== */
+
+
+.gnb-wrap .gnb ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.gnb-wrap .gnb ul li a{
+    padding: 0 65px;
+}
+.gnb-wrap .gnb ul li a:first-child{
+    padding: 0 65px 0 0;
+}
+
+.snb-wrap .snb .menu-box{
+    width: 231.328px;
+    height: 222px;
+}
+.snb-wrap .snb dl dt{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+    color: #111111;
+    padding: 10px 0;
+}
+.snb-wrap .snb dl dd{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+    color: #555555;
+    height: 35px;
+    text-align: left;
+    padding: 10px 0;
+}
+.inner-box{
+    display: flex;
+    flex-flow: row nowrap;
+    border: none;
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 29px 0 40px;
+}
+.menu-wrap{
+    width: 794px;
+    height: 222px;
+    padding: 0 100px 0 0;
+    border: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.notice-box{
+    margin: 10px 0 0;
+    padding: 22px 0 23px 70px;
+    border: none;
+    border-left: 1px solid rgb(221, 221, 221);
+    width: 270px;
+    height: 156px;
+}
+/* 더보기 기능 ================================ */
+
+/* 체크박스 숨김 */
+#snb-more {
+    display: none;
+}
+/* GNB 메뉴 ul 스타일 */
+.gnb-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* 간격 조절 */
+}
+/* "더보기" 텍스트와 화살표를 나란히 수평 정렬, label을 li처럼 보이게 */
+.more-label {
+    font-size: 18px;
+    letter-spacing: -0.75px;
+    line-height: 54px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* 기본 상태의 ▼ 화살표 아이콘 */
+.arrow {
+    margin: 0 4px 0 7px;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+/* *************수정************** */
+#header {
+    position: relative; /* 추가 또는 수정 */
+    /* 기존 스타일 유지 */
+}
+
+.snb-wrap {
+  position: fixed;
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: white;
+}

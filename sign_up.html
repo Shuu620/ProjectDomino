@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+    <!-- 기본 Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 페이지 관련 CSS -->
+    <link rel="stylesheet" href="./css/sign_up.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+</head>
+<body>
+    <div id="costomer_compliment_wrap">
+        <header>
+            <div id="header"></div> 
+        </header>
+        <main id="costomer_compliment_main">
+            <!-- lnb -->
+            <section id="costomer_compliment_gnb">
+                <div class="costomer_compliment_gnb">
+                    <h2>회원가입</h2>
+                    <p><span class="costomer_compliment_gnb_span">홈 &gt;</span> 회원가입</p>
+                </div>
+            </section> 
+            <div class="costomer_compliment_collect_info">
+                <label>개인정보 수집 및 이용동의</label>
+                <textarea id="costomer_compliment_privacyNotice" rows="10" cols="60" readonly>
+회사는 고객문의에 대해 정확하고 빠른 대응을 위해 아래와 같이 개인정보를 수집하고 있습니다.
+
+<수집하는 개인정보의 항목>
+-이름, 휴대전화, 이메일, 비밀번호
+
+<개인정보의 수집 및 이용목적>
+- 문의사항의 접수 및 답변의 전달
+- 원활한 의사소통 경로의 확보
+- 고객불만 등에 대한 대응
+
+<보유 및 이용기간>
+- 보유근거 : 전자상거래 등에서의 소비자보호에 관한 법률
+- 보유기간 : 3년 (소비자의 불만 또는 분쟁처리에 관한 기록)
+
+* 문의에 대한 처리과정에서 회사(매장 또는 고객대응팀)는 고객님께 연락드릴 수 있습니다.
+* 문의하기 서비스 이용에 필요한 최소한의 개인정보 수집·이용에 동의하지 않을 권리가 있으나 동의 거부 시 신속한 문제해결이 제한될 수 있습니다.
+                </textarea>
+                <div class="costomer_compliment_radio_styled costomer_compliment_radio_styled_agree">
+                    <label>
+                        <input type="radio" name="agree" value="yes">
+                        동의함
+                    </label>
+                    <label>
+                        <input type="radio" name="agree" value="no">
+                        동의하지 않음
+                    </label>
+                </div>
+                <div class="costomer_compliment_warning">
+                    <h3>
+                        제목과 내용에 개인정보를 기입하지 마시기 바랍니다.<br>
+                        또한 신분증, 증빙서류 등 개인정보가 포함된 파일은 업로드하지 마시기 바랍니다.<br>
+                        필요할 시 고객만족센터 안내를 받으시고 하단 개인정보 수집이용 동의서와 함께 보내주시기 바랍니다.
+                    </h3>
+                </div>
+                <div class="costomer_compliment_download_notice">
+                    <button type="button">개인정보 수집이용 동의서 다운로드</button>
+                </div>
+            </div>    
+
+            <!-- form -->
+            <form action="#" method="post" enctype="multipart/form-data" id="costomer_compliment_form">
+                <div class="costomer_compliment_form costomer_compliment_name">
+                    <label for="name">아이디<span class="costomer_compliment_essential">*</span></label>
+                    <input type="text" id="costomer_compliment_name" name="name" required>
+                </div>
+                <div class="costomer_compliment_form costomer_compliment_password">
+                    <label for="password">비밀번호<span class="costomer_compliment_essential">*</span></label>
+                    <input type="password" id="costomer_compliment_password" name="password" placeholder="숫자 4자리 입력" required>
+                </div>
+                <div class="costomer_compliment_form costomer_compliment_password_chk">
+                    <label for="password">비밀번호 확인<span class="costomer_compliment_essential">*</span></label>
+                    <input type="password" id="costomer_compliment_password" name="password" placeholder="숫자 4자리 입력" required>
+                </div>
+                <div class="costomer_compliment_form costomer_compliment_phone">
+                    <label>휴대전화<span class="costomer_compliment_essential">*</span></label>
+                    <select name="phone1" required>
+                        <option value="010" selected>010</option>
+                        <option value="011">011</option>
+                    </select>
+                    <input type="text" name="phone2" maxlength="4" required>
+                    <input type="text" name="phone3" maxlength="4" required>
+                </div>
+                <div class="costomer_compliment_form costomer_compliment_email">
+                    <label>이메일<span class="costomer_compliment_essential">*</span></label>
+                    <input type="text" name="email_id" required>
+                    @
+                    <input type="text" name="email_domain" required>
+                    <select name="email_select">
+                        <option value="">직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                    </select>
+                </div>
+                <div class="costomer_compliment_form_btn">
+                    <button type="reset" class="costomer_compliment_reset_btn">다시입력</button>
+                    <button type="submit" class="costomer_compliment_submit_btn">가입하기</button>
+                </div>
+            </form>
+            <!-- /form -->
+        </main>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header").load('./header.html');
+            $("#footer").load('./footer.html');
+
+            const script = document.createElement('script');
+            script.src = './header.js';
+            document.body.appendChild(script);
+        })
+    </script>
+</body>
+</html>

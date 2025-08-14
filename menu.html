@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴</title>
+    <!-- 아이콘 및 스타일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+    <!-- 기본 Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 페이지 관련 CSS -->
+    <link rel="stylesheet" href="./css/menu.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 페이지 관련 JS -->
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header"></div>
+        </header>
+        <div class="menu_header">
+            <div class="menu_title">
+                <h2>메뉴</h2>
+                <p><span style="color: #8f918f;">홈 > 메뉴 ></span> 피자</p>
+            </div>
+            <nav class="menu_teb">
+                <ul>
+                    <li>
+                        <label><input type="checkbox" checked><span>피자</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>하프앤하프</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>사이드디시</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>인기세트메뉴</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>마이키친</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>음료&기타</span></label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- new section -->
+        <section class="section">
+            <h3>New</h3>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="블랙타이거 슈림프 하이 프로틴 도우">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">블랙타이거 슈림프 하이 프로틴 도우
+                        <span class="badge">하이프로틴</span>
+                        <span class="badge">시그니처</span>
+                    </p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>39,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>33,900원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#씨푸드 하이 프로틴 시그니처</p>
+                    <p class="pizza_info">#고단백 고식이섬유 섭취로 만나는 블랙타이거 슈림프</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza02.jpg" alt="와일드 와일드 웨스트 스테이크 하이 프로틴 도우">
+                    <p class="pizza_name">와일드 와일드 웨스트 스테이크 하이 프로틴 도우
+                        <span class="badge">하이프로틴</span>
+                        <span class="badge">시그니처</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>36,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>31,900원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#미트 하이 프로틴 시그니처</p>
+                    <p class="pizza_info">#고단백 고식이섬유 섭취로 만나는 와일드 와일드 웨스트 스테이크!</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza03.jpg" alt="포테이토 하이 프로틴 도우">
+                    <p class="pizza_name">포테이토 하이 프로틴 도우
+                        <br><span class="badge">하이프로틴</span>
+                        <span class="badge">시그니처</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>30,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>23,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#클래식 하이 프로틴 시그니처</p>
+                    <p class="pizza_info">#고단백 고식이섬유 섭취로 만나는 포테이토!</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza04.jpg" alt="포테이토 Subzza">
+                    <p class="pizza_name">포테이토 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#씨푸드 하이 프로틴 시그니처</p>
+                    <p class="pizza_info">#고단백 고식이섬유 섭취로 만나는 블랙타이거 슈림프</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza05.jpg" alt="리얼 불고기 Subzza">
+                    <p class="pizza_name">리얼 불고기 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#프리미엄 불고기 토핑이 듬뿍</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza06.jpg" alt="맥콘 베이컨 Subzza">
+                    <p class="pizza_name">맥콘 베이컨 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#맥앤치즈의 고소함과 콘&베이컨의 실패 없는 단짠 조합!</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza07.jpg" alt="소시지 맥스 Subzza">
+                    <p class="pizza_name">소시지 맥스 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#이탈리안 페퍼 소시지, 페퍼로니, 포크, 햄, 불고기까지 5가지 미트를 맥스하게!</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/new_pizza08.jpg" alt="Subzza(썹자) 콤보">
+                    <p class="pizza_name">Subzza(썹자) 콤보
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">콤보</span>9,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#다다익썹! 모일수록 커지는 혜택!</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 프리미엄 section -->
+        <section class="section">
+            <h3>프리미엄</h3>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/primium_pizza01.jpg" alt="K-쌈장 채끝 스테이크">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">K-쌈장 채끝 스테이크</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>33,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>28,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#카망베르 크림 치즈 무스 위에 모차렐라를 얹어 치즈돔 완성!</p>
+                    <p class="pizza_info">#K-쌈장 소스가 더해져 감칠맛 가득 채끝 스테이크 까지!</p>
+                </li>
+                <li>
+                    <img src="images/primium_pizza02.jpg" alt="K-Rib&치즈">
+                    <p class="pizza_name">K-Rib&치즈</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>33,900원~ 
+                        </p>
+                        <p>
+                            <span class="size">M</span>28,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#더 맛있게 Son봤다! 데미글라스 소스로 완성한 한국식 K-Rib!</p>
+                    <p class="pizza_info">#Sonny 큐브 치즈와 미트 크럼블로 풍성한 식감까지!</p>
+                </li>
+                <li>
+                    <img src="images/primium_pizza03.jpg" alt="와일드 와일드 웨스트 스테이크">
+                    <p class="pizza_name">와일드 와일드 웨스트 스테이크</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>33,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>28,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#‘카우보이’들이 즐겨 먹던 정통 ‘그릴드 비프 스테이크'의 재현!</p>
+                    <p class="pizza_info">#‘그릴드 비프’와 ‘카우보이 버터 치즈 소스’로 만들어 내는 맛의 조화!</p>
+                </li>
+                <li>
+                    <img src="images/primium_pizza04.jpg" alt="블록버스터4">
+                    <p class="pizza_name">블록버스터4</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>36,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>29,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#씨푸드 하이 프로틴 시그니처</p>
+                    <p class="pizza_info">#고단백 고식이섬유 섭취로 만나는 블랙타이거 슈림프</p>
+                </li>
+                <li>
+                    <img src="images/primium_pizza05.jpg" alt="블랙타이거 슈림프">
+                    <p class="pizza_name">블랙타이거 슈림프
+                        <span class="badge">시그니처</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>36,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>30,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#바다와 육지의 대왕이 하나로</p>
+                </li>
+                <li>
+                    <img src="images/primium_pizza06.jpg" alt="베스트 콰트로">
+                    <p class="pizza_name">베스트 콰트로</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>36,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>29,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#4가지 피자를 한판에</p>
+                </li>
+            </ul>
+        </section>
+        <!-- 하프앤하프 시그니처 section -->
+        <section class="section">
+            <h3>하프앤하프 시그니처</h3>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/half_pizza01.jpg" alt="필라델피아 치즈 스테이크+블랙타이거 슈림프">
+                    <p class="pizza_name">필라델피아 치즈 스테이크+블랙타이거 슈림프
+                        <span class="badge">기간한정</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>32,900원~ 
+                        </p>
+                        <p>
+                            <span class="size">M</span>25,750원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#35주년 기념! 월드 베스트x코리아 베스트!</p>
+                    <p class="pizza_info">#월드 베스트와 만난 프리미엄 시그니처 블랙타이거 슈림프!</p>
+                </li>
+                <li>
+                    <img src="images/half_pizza02.jpg" alt="필라델피아 치즈 스테이크+포테이토">
+                    <p class="pizza_name">필라델피아 치즈 스테이크+포테이토
+                        <span class="badge">기간한정</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>28,400원~ 
+                        </p>
+                        <p>
+                            <span class="size">M</span> 21,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#35주년 기념! 월드 베스트x코리아 베스트!</p>
+                    <p class="pizza_info">#월드 베스트와 만난 클래식 시그니처 포테이토!</p>
+                </li>
+                <li>
+                    <img src="images/half_pizza03.jpg" alt="K-쌈장 채끝 스테이크+블랙타이거 슈림프">
+                    <p class="pizza_name">K-쌈장 채끝 스테이크+블랙타이거 슈림프</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>35,400원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>29,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#K-쌈장 채끝&카망베르 무스 치즈돔과 블랙타이거의 만남!</p>
+                    <p class="pizza_info">#스테이크+치즈+새우=맛난거!</p>
+                </li>
+                <li>
+                    <img src="images/half_pizza04.jpg" alt="K-쌈장 채끝 스테이크+포테이토">
+                    <p class="pizza_name">K-쌈장 채끝 스테이크+포테이토</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>30,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>24,250원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#감칠맛 가득 채끝과 담백한 포테이토의 만남!</p>
+                    <p class="pizza_info">#채끝 스테이크와 함께 노엣지로도 즐길 수 있는 포테이토!</p>
+                </li>
+                <li>
+                    <img src="images/half_pizza05.jpg" alt="K-쌈장 채끝 스테이크+K-Rib&치즈">
+                    <p class="pizza_name">K-쌈장 채끝 스테이크+K-Rib&치즈</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>33,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>28,000원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#스테이크&치즈 피자들의 만남!</p>
+                    <p class="pizza_info">#(스테이크+치즈)x2=맛난거</p>
+                </li>
+                <li>
+                    <img src="images/half_pizza_more.jpg" alt="하프앤하프 더보기">
+                </li>
+            </ul>
+        </section>
+        <!-- 클래식 section -->
+        <section class="section">
+            <h3>클래식</h3>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/classic_pizza01.jpg" alt="필라델피아 치즈 스테이크">
+                    <p class="pizza_name">필라델피아 치즈 스테이크
+                        <span class="badge">기간한정</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>28,900원~  
+                        </p>
+                        <p>
+                            <span class="size">M</span>21,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#도미노 고객님들이 직접 뽑은 월드 베스트 피자!</p>
+                    <p class="pizza_info">#불고기와 두 가지 치즈로 한 입 가득 고소, 짭짤, 달콤함을!</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza02.jpg" alt="포테이토">
+                    <p class="pizza_name">포테이토
+                        <span class="badge">시그니처</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>27,900원~ 
+                        </p>
+                        <p>
+                            <span class="size">M</span>20,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#도미노피자 No.1 레전드</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza03.jpg" alt="뉴욕 오리진">
+                    <p class="pizza_name">뉴욕 오리진</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>29,900원~ 
+                        </p>
+                        <p>
+                            <span class="size">M</span>22,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#다채로운 토핑의 미국 피자 오리진 스타일</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza04.jpg" alt="리얼불고기">
+                    <p class="pizza_name">리얼불고기</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>29,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>22,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#프리미엄 불고기 토핑이 듬뿍</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza05.jpg" alt="우리 고구마">
+                    <p class="pizza_name">우리 고구마</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>30,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>23,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#고구마 큐브&무스가 듬뿍!</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza06.jpg" alt="슈퍼디럭스">
+                    <p class="pizza_name">슈퍼디럭스</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>28,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>21,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#누구나 사랑하는 베이직 피자</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza07.jpg" alt="슈퍼슈프림">
+                    <p class="pizza_name">슈퍼슈프림</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>27,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>20,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#콘과 파인애플의 달콤한 조화</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza08.jpg" alt="베이컨체더치즈">
+                    <p class="pizza_name">베이컨체더치즈</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>27,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>20,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#베이컨 매니아들의 원 픽</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza09.jpg" alt="페퍼로니">
+                    <p class="pizza_name">페퍼로니</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>25,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>18,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#짭짤한 풍미가 일품</p>
+                </li>
+                <li>
+                    <img src="images/classic_pizza10.jpg" alt="치즈">
+                    <p class="pizza_name">치즈</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>23,900원~
+                        </p>
+                        <p>
+                            <span class="size">M</span>16,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#토마토 소스와 풍부한 모차렐라</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Happy Daily Pizza section -->
+        <section class="section">
+            <h3>Happy Daily Pizza</h3>
+            <p class="daliy_pizza_info">한 손으로 가볍게 Catch! 스포츠 응원할 땐 썹자! (썹자 4종 정식 출시!)</p>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/daily_pizza01.jpg" alt="Subzza(썹자) 콤보">
+                    <p class="pizza_name">Subzza(썹자) 콤보
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">콤보</span>9,500원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#다다익썹! 모일수록 커지는 혜택!</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza02.jpg" alt="포테이토 Subzza">
+                    <p class="pizza_name">포테이토 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#도미노피자 No.1 레전드</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza03.jpg" alt="리얼 불고기 Subzza">
+                    <p class="pizza_name">리얼 불고기 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원 
+                        </p>
+                    </div>
+                    <p class="pizza_info">#프리미엄 불고기 토핑이 듬뿍</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza04.jpg" alt="맥콘 베이컨 Subzza">
+                    <p class="pizza_name">맥콘 베이컨 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원 
+                        </p>
+                    </div>
+                    <p class="pizza_info">#맥앤치즈의 고소함과 콘&베이컨의 실패 없는 단짠 조합!</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza05.jpg" alt="소시지 맥스 Subzza">
+                    <p class="pizza_name">소시지 맥스 Subzza
+                        <span class="badge">NEW</span>
+                    </p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">S</span>7,900원 
+                        </p>
+                    </div>
+                    <p class="pizza_info">#이탈리안 페퍼 소시지, 페퍼로니, 포크, 햄, 불고기까지 5가지 미트를 맥스하게!</p>
+                    <p class="pizza_info">#스포츠 응원할 땐 썹자!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza06.jpg" alt="맥콘 베이컨">
+                    <p class="pizza_name">맥콘 베이컨</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>16,900원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#L 포장 15,900원</p>
+                    <p class="pizza_info">#맥앤치즈의 고소함과 콘&베이컨의 실패 없는 단짠 조합!</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza07.jpg" alt="클래식 리코타">
+                    <p class="pizza_name">클래식 리코타</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>16,900원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#L 포장 15,900원</p>
+                    <p class="pizza_info">#기본기 강한 토마토 소스에 리코타 치즈로 맛을 더 밀도있게!</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza08.jpg" alt="소시지 맥스">
+                    <p class="pizza_name">소시지 맥스</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>17,900원~
+                        </p>
+                    </div>
+                    <p class="pizza_info">#L 포장 16,900원</p>
+                    <p class="pizza_info">#이탈리안 페퍼 소시지, 페퍼로니, 포크, 햄, 불고기까지 5가지 미트를 맥스하게!</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza09.jpg" alt="맥콘 베이컨+클래식 리코타">
+                    <p class="pizza_name">맥콘 베이컨+클래식 리코타</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>16,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#포장 15,900원</p>
+                    <p class="pizza_info">#맥앤치즈의 고소함과 만난 클래식의 맛!</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza10.jpg" alt="클래식 리코타+소시지 맥스">
+                    <p class="pizza_name">클래식 리코타+소시지 맥스</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>17,400원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#포장 16,400원</p>
+                    <p class="pizza_info">#클래식 치즈의 고소함과 만난 5가지 미트!</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza11.jpg" alt="소시지 맥스+맵퍼로니">
+                    <p class="pizza_name">소시지 맥스+맵퍼로니</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>17,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#포장 16,900원</p>
+                    <p class="pizza_info">#짠맵 조합에 코카-콜라 한 잔이면 크으~</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+                <li>
+                    <img src="images/daily_pizza12.jpg" alt="맵퍼로니">
+                    <p class="pizza_name">맵퍼로니</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">L</span>17,900원
+                        </p>
+                    </div>
+                    <p class="pizza_info">#포장 16,900원</p>
+                    <p class="pizza_info">매콤+달콤+짭짤! 할라피뇨와 망고 하바네로 소스, 페퍼로니의 조화!</p>
+                    <p class="pizza_info">#해피 데일리 피자, 매일 매일 도미노를 끝없이 만나보세요!</p>
+                </li>
+            </ul>
+        </section>
+        <section class="menu_info">
+            <div>
+                <p>※유의사항</p><br>
+                <ul>
+                    <li>
+                        단종으로 인한 상품권 사용 안내 : 동일 가격 또는 더 높은 가격의 제품으로 대체 주문 가능<br>
+                        (상품권에 명시된 제품보다 더 높은 가격대의 제품 주문 시, 금액 추가 발생)<br>
+                        (단, 상품권에 명시된 제품보다 저렴한 제품 주문 시 발생하는 차액에 대해서는 환불 처리 불가)
+                    </li>
+                    <li>
+                        일부 리조트 및 특수매장은 상기 가격과 차이가 있음
+                    </li>
+                    <li>
+                        모든 사진은 이미지 컷이므로 실제 제품과 다를 수 있습니다.
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>제품의 원산지, 영양성분 및 알레르기 유발성분을 먼저 확인하세요.</p>
+                <button>
+                    <a href="./404.html">원산지·영양성분·알레르기 유발성분 정보&nbsp;&nbsp;
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header").load('./header.html');
+            $("#footer").load('./footer.html');
+
+            const script = document.createElement('script');
+            script.src = './header.js';
+            document.body.appendChild(script);
+        })
+    </script>
+    <script src="./js/coming-soon.js"></script>
+</body>
+</html>

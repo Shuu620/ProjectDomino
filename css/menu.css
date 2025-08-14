@@ -1,0 +1,196 @@
+@charset "utf-8";
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu_header {
+    margin-top: 50px;
+    margin-bottom: 56px;
+}
+.menu_header .menu_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.menu_header .menu_title h2 {
+    font-size: 32px;
+}
+.menu_header .menu_title p {
+    font-size: 14px;
+}
+.menu_header .menu_teb ul {
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+.menu_header .menu_teb ul li{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8f918f;
+    padding: 2px 0;
+    margin-bottom: 15px;
+}
+.menu_header .menu_teb ul li::after {
+    content: "|";
+    color: #dddddd;
+    margin: 2px 12px;
+    font-size: 12px;
+}
+.menu_header .menu_teb ul li:last-child::after {
+    display: none;
+}
+.menu_header .menu_teb ul li input {
+    display: none;
+}
+input[type="checkbox"]:checked + span {
+    color: #000;
+}
+.menu_header .menu_teb ul li:first-child {
+    padding-left: 0;
+}
+/* 피자 이미지 크기 */
+.pizza_list li img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 12px;
+}
+.section {
+    width: 100%;
+}
+.section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.pizza_list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+.pizza_list li {
+    width: 280px;
+    margin: 0 13.333px;
+    margin-bottom: 66px;
+}
+.pizza_list li:first-child {
+    margin-left: 0;
+}
+.pizza_list li:nth-child(4n) {
+    margin-right: 0;
+}
+.pizza_list li:nth-child(5n) {
+    margin-left: 0;
+}
+.pizza_name_div {
+    display: flex;
+    flex-flow: row wrap;
+}
+.pizza_name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+/* 제목 옆 팝업 */
+.badge {
+    display: inline;
+    font-size: 10px;
+    color: #fff;
+    background-color: #ff143c;
+    border-radius: 2px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 4px;
+    margin: 0px;
+    vertical-align: middle;
+}
+.size {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff143c;
+    margin-right: 10px;
+}
+.cost {
+    display: flex;
+    margin-bottom: 24px;
+}
+.cost p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 24px;
+}
+.pizza_info {
+    color: #8f918f;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+/* 피자이름 옆 알림 */
+.alert {
+    background-color: #ff143c;
+    color: #fff;
+    font-size: 8px;
+    border-radius: 2px;
+    padding: 4px 6px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 6px;
+}
+.menu_info {
+    display: flex;
+    border-top: 1px solid #888888;
+}
+.menu_info div {
+    padding: 50px 0 100px 0;
+    width: 50%;
+}
+.menu_info div ul {
+    padding-left: 20px;
+}
+.menu_info div:nth-child(1) {
+    color: #8f918f;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.menu_info div:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    color: #8f918f;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+}
+.menu_info div:nth-child(2) p {
+    padding-bottom: 32px;
+}
+.menu_info div:nth-child(2) button {
+    width: 284px;
+    height: 50px;
+    background: #222222;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+}
+.menu_info div:first-child p,
+.menu_info div:first-child ul {
+    border-right: 1px solid #eeeeee;
+}
+.menu_info div ul li{
+    list-style: disc;
+}
+/* 데일리 피자 소개 */
+.daliy_pizza_info {
+    color: #5e5e5e;
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}

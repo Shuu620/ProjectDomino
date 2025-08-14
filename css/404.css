@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#error-container {
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+}
+
+.error-image {
+  width: 400px;
+  height: 550px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.back-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: #444;
+}

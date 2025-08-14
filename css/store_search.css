@@ -1,0 +1,272 @@
+@charset "UTF-8";
+#store_search_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+}
+
+#store_search_main {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+/* gnb */
+.store_search_gnb{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+}
+.store_search_gnb>h2 {
+    font-size: 31px;
+}
+.store_search_gnb_span{
+    color: #888;
+}
+/* /gnb */
+
+/* 검색버튼 */
+.store_search_btn_all_store{
+    width: 105px;
+    height: 32px;
+    background: rgb(34, 34, 34);
+    color: rgb(241, 245, 241);
+    position: absolute;
+    right: 0;
+    line-height: 32px;
+    text-align: center;
+}
+/* /검색버튼 */
+
+/* 지도검색영역 */
+#store_search_search_form {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 92px;
+    width: 1200px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.store_search_search_tab {
+    display: flex;
+}
+.store_search_search_area{
+    width: 450px;
+    height: 750px;
+}
+.store_search_search_tab{
+    font-size: 15px;
+    display: flex;
+    margin-bottom: 39px;
+}
+.store_search_search_tab>h3{
+    text-align: center;
+    width: 225px;
+    height: 54px;
+    padding-top: 17px;
+
+}
+.store_search_area{
+    border-bottom: none;
+    border-right: 1px solid rgb(221, 221, 221);
+}
+.store_search_store_name{
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background: rgb(245, 245, 245);
+}
+
+.store_search_select_area {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+#store_search_region {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.store_search_region {
+    display: flex;
+    margin: 30px;
+}
+#store_search_region_code01,
+#store_search_region_code02{
+    width: 167px;
+    height: 40px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-right: 5px;
+    padding-left: 20px;
+}
+
+.store_search_btn_search>img{
+    width: 42px;
+    height: 42px;
+}
+
+.store_search_switch_btn {
+    margin-right: 188px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+/* ✅ 스위치 전체 박스 */
+.store_search_switch {
+  position: relative;
+  display: inline-block;
+  width: 66px;  /* 이미지 너비에 맞춤 */
+  height: 30px;
+}
+
+/* ✅ 체크박스 숨김 */
+.store_search_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+/* ✅ 슬라이더에 이미지 배경 적용 */
+.store_search_slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 30px;
+  background: url('../images/onoff.png') no-repeat center/cover;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+/* ✅ ON / OFF 각각 숨기고 보이게 처리 */
+.store_search_slider .store_search_on,
+.store_search_slider .store_search_off {
+  position: absolute;
+  left: 50%;
+  transition: opacity 0.3s;
+}
+
+.store_search_switch input:checked + .store_search_slider .store_search_on {
+  opacity: 1;
+}
+
+.store_search_switch input:checked + .store_search_slider .store_search_off {
+  opacity: 0;
+}
+
+.store_search_switch input:not(:checked) + .store_search_slider .store_search_on {
+  opacity: 0;
+}
+
+.store_search_switch input:not(:checked) + .store_search_slider .store_search_off {
+  opacity: 1;
+}
+
+.store_search_switch_btn>p {
+    color: rgb(136, 136, 136);
+    line-height: 30px;
+    margin-left: 9px;
+}
+.store_search_d-notice {
+    margin-left: 39px;
+    margin-bottom: 24px;
+}
+.store_search_search_result01,
+.store_search_search_result02{
+    height: 175px;
+    display: flex;
+    padding-top: 29px;
+    padding-left: 32px;
+
+}
+.store_search_search_result01{
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.store_search_search_result02{
+    border: none;
+}
+
+.store_search_result_left{
+    width: 294px;
+}
+.store_search_result_left h4{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.store_search_result_left h5{
+    color: rgb(136, 136, 136);
+    margin-bottom: 41px;
+}
+
+
+.store_search_result_btn button {
+    width: 80px;
+    height: 32px;
+    color: #fff;
+}
+.store_search_view_details {
+    background: rgb(136, 136, 136);
+}
+.store_search_d_to_d {
+    background: rgb(17, 17, 17);
+}
+
+.store_search_result_right{
+    display: flex;
+    margin-right: 42px;
+}
+.store_search_online,
+.store_search_offline {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+}
+.store_search_online{
+    margin-right: 5px;
+}
+.store_search_online img,
+.store_search_offline img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.store_search_online_text,
+.store_search_offline_text {
+    width: 100%;
+    position: absolute;
+    top: 50%;  /* 수직 중앙 정렬 시작 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(253, 15, 68);
+    pointer-events: none; /* 클릭 방해 안 하게 */
+    line-height: 1.1;
+}
+.store_search_online_text{
+    color: rgb(253, 15, 68);
+}
+.store_search_offline_text{
+    color: rgb(3, 57, 137);
+}
+
+
+
+.store_search_search_map {
+    width: 750px;
+    height: 750px;
+}
+#store_search_map {
+    width: 750px;
+    height: 750px;
+    border-right: 1px solid rgb(221, 221, 221);
+    border-left: 1px solid rgb(221, 221, 221);
+}

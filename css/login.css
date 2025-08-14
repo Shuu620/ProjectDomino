@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+#login_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+}
+
+.login_title-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+}
+.login_title-wrap>h2 {
+    font-size: 31px;
+}
+
+.login_depth-area>ol {
+    display: flex;
+}
+.login_depth-area>ol>li {
+    margin-left: 8px;
+}
+.login_depth-area>ol>li>a {
+    color: #888;
+}
+
+#login_content{
+    width: 430px;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+.login_tab-type5 {
+    display: flex;
+    margin-bottom: 50px;
+}
+.login_tab-type5>h3{
+    text-align: center;
+    width: 225px;
+    height: 54px;
+    padding-top: 17px;
+    font-size: 16px;
+    color: rgb(136, 136, 136);
+}
+.login_active {
+    border-bottom: none;
+    border: 1px solid #000;
+    border-bottom: none;
+    color: #000 !important;
+}
+.non_member_order{
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    background: rgb(245, 245, 245);
+    color: rgb(136, 136, 136);
+}
+
+
+.login_form-item>input {
+    width: 428px;
+    height: 40px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 10px;
+    padding: 13px;
+}
+
+
+.login_chk-item{
+    width: 428px;
+    display: flex;
+    justify-content: space-between;
+}
+.login_chk-box{
+    display: flex;
+    height: 20px;
+}
+/* .login_chk-box>label:nth-last-of-type(2){  수정함
+    font-size: 14px;
+    width: 70px;
+} */
+.login_chk-box > label:nth-last-of-type(2),
+.login_chk-box > label[for="login_idcheck"] {
+    display: inline-block;
+    font-size: 14px;
+    width: auto; /* 기존에 70px로 고정돼 있었던 것 제거 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+.btn-member-wrap {
+    margin-bottom:20px;
+}
+
+.btn-member-wrap>span:nth-child(1) {
+    border-right: 1px solid rgb(221, 221, 221);
+    padding-right: 11px;
+}
+.btn-member-wrap>span{
+    padding-left: 11px;
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+}
+
+.login_btn-wrap>a{
+    display: block;
+    width: 431px;
+    height: 59px;
+    line-height: 59px;
+    text-align: center;
+}
+
+.login_btn-type{
+    background: rgb(255, 20, 60);
+    color: #fff;
+    margin-bottom: 9px;
+}
+.btn-type-brd5 {
+    width: 428px;
+    height: 56px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 46px;
+}
+
+
+
+.login_btn-sns-wrap{
+    margin-bottom: 82px;
+}
+.login_title-type {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+
+.login_btn-sns-item>a>img {
+    width: 51px;
+    height: 51px;
+}
+
+.login_btn-sns-item > a {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center;     /* 가운데 정렬 */
+    text-align: center;
+    gap: 4px;                /* 아이콘과 텍스트 간격 */
+}
+
+.login_btn-sns-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 버튼 사이 간격 */
+}
+
+.login_chk-box > label {
+    font-size: 14px;
+    color: #888888;
+}
+
+.login_chk-box {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* 체크박스와 텍스트 사이 간격 */
+}

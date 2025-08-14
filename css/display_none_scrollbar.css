@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* 스크롤 기능을 하면서 스크롤 뷰 안보이게 하기 - 웹킷브라우저 */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* 스크롤 기능을 하면서 스크롤 뷰 안보이게 하기 - IE 모던 브라우저 */
+html,body {
+    -ms-overflow-style: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도미노피자</title>
+    <!-- 아이콘 및 스타일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/font.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/ecoupon_instruction.css">
+</head>
+<body>
+    <div id="ecoupon_instruction_wrap">
+        <header>
+            <div id="header"></div> 
+        </header>
+        <main>
+            <div class="ecoupon_instruction_container">
+                <div class="ecoupon_instruction_w-gnb">
+                    <h2>e-쿠폰</h2>
+                    <ol class="ecoupon_instruction_w-gnb_li">
+                        <li><a href="./index.html">홈 &gt; </a></li>
+                        <li>e-쿠폰 &gt; </li>
+                        <li>e-쿠폰 주문</li>
+                    </ol>
+                </div>
+                <article class="ecoupon_instruction_e-cupon">  <!-- 마진 탑 20 -->
+                <div class="ecoupon_instruction_menu-wrap"> <!-- 패딩 마진 넣어야함 -->
+                    <div class="ecoupon_instruction_menu">
+                        <ul>
+                            <li class="ecoupon_instruction_active"><a href="ecoupon_order.html">e-쿠폰 주문</a></li>
+                            <li><a href="./ecoupon_instruction.html">e-쿠폰 사용 안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+                <div class="ecoupon_instruction_main-main">
+                    <div class="ecoupon_instruction_ul-wrap"> <!-- 위아래 마진 50씩 -->
+                        <ul class="ecoupon_instruction_wq-gnb">
+                            <li class="ecoupon_instruction_active"><a href="./404.html" class="ecoupon_instruction_w-btn">쿠폰 메뉴와 다른 메뉴로 변경해서 주문하는 방법</a></li>
+                            <li><a href="#" onclick="showComingSoonMessage(); return false;" class="ecoupon_instruction_w-btn">메뉴 변경 없이 쿠폰 구성대로 주문하는 방법</a></li>
+                            <li><a href="#" onclick="showComingSoonMessage(); return false;" class="ecoupon_instruction_w-btn" id="ecoupon_instruction_money">금액상품권으로 주문하는 방법</a></li>
+                        </ul>
+                    </div>
+                    <div class="ecoupon_instruction_img-box"> <!-- 마진바텀 80 -->
+                        <img src="./images/ecoupon_instruction01.png" alt="Step1. 회원로그인(비회원일 경우 회원가입 후 사용가능), Step2. 원하는 메뉴 장바구니 담기(피자 선택 필수), Step3. 배달 받을 주소 또는 포장 매장 선택, Step4. 결제 시 할인적용 &gt; 상품권 및 쇼핑몰 쿠폰번호 입력 선택, Step5. e-쿠폰 선택 후 쿠폰번호 입력, Step6. 쿠폰 적용 후 결제하기">
+                    </div>
+                    <div class="ecoupon_instruction_w-info-wrap"> <!-- 보더 위아래 1px 페딩 위아래 50 -->   <!-- 유의사항쪽 -->
+                        <div class="ecoupon_instruction_title-wrap"> <!-- 300x20 -->
+                            <div class="ecoupon_instruction_title-type2">유의사항</div>  <!-- 63.24x20 -->
+                        </div>
+                        <div class="ecoupon_instruction_cont-wrap"> <!-- 900x80 -->
+                            <ul class="ecoupon_instruction_list-text-w3">
+                                <li>- 피자(M,L) 1판 이상 주문 시 e-쿠폰 이용이 가능합니다. (마이키친 피자 주문 시 사용 불가)</li> <!-- 폰트13 굵기 500 고정 -->
+                                <li>- e-쿠폰과 동일 가격 또는 금액 초과 주문 시 주문 가능합니다. (금액 미달 시 주문 불가)</li>
+                                <li>- 피자 단품, 사이드디시 단품, 음료 단품에 대해서만 쿠폰 적용 금액에 포함되며, 추가 토핑 등은 차액으로 별도 결제하셔야 합니다.</li>
+                                <li>- e-쿠폰 이용 시 여타 할인 및 프로모션 메뉴(특가메뉴, 인기세트메뉴)와 함께 이용할 수 없습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+    
+                <div class="ecoupon_instruction_w-btn-wrap"> <!-- 마진탑 60 -->
+                    <a href="#" onclick="showComingSoonMessage(); return false;" class="ecoupon_instruction_w-btn">주문하기</a>  <!-- 218x60 -->
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header").load('./header.html');
+            $("#footer").load('./footer.html');
+
+            const script = document.createElement('script');
+            script.src = './header.js';
+            document.body.appendChild(script);
+        })
+    </script>
+    <script src="./js/coming-soon.js"></script>
+</body>
+</html>
+
+

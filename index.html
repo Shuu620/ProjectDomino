@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도미노피자</title>
+    <!-- 아이콘 및 스타일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 박스 슬라이더 CSS -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- jQuery 로드 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 박스 슬라이더 플러그인 파일 -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- Slick Slider CSS & JS -->
+    <link rel="stylesheet" type="text/css" href="./css/bxslider2.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="body-wrap">
+            <div class="top-wrap">
+                <a href="./index.html" class="btn-logo"><img src="./images/Main Logo.png" alt="도미노피자로고"></a>
+                <div class="location">
+                    <img src="./images/MyLocation.png" alt="내위치아이콘">
+                    <a href="#" onclick="showComingSoonMessage(); return false;">동일로215길 48</a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="./login.html">로그인</a>
+                        </li>
+                        <li>
+                            <a href="./sign_up.html">회원가입</a>
+                        </li>
+                        <li>
+                            <select id="select-type">
+                                <option value="kor">KOR</option>
+                                <option value="eng">ENG</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- 1Depth Menu -->
+        </div>
+        <div class="gnb-wrap body-wrap">
+            <div class="gnb">
+                <ul>
+                    <li><a href="./menu.html">메뉴</a></li>
+                    <li><a href="./ecoupon_order.html">e-쿠폰</a></li>
+                    <li><a href="./gift.html">상품권 선물</a></li>
+                    <li><a href="./eventAff_Affiliation.html">이벤트·제휴</a></li>
+                    <li><a href="./store_search.html">매장검색</a></li>
+                    <li><a href="./franchise.html">가맹점모집</a></li>
+                    <li>
+                        <label for="snb-more" class="more-label">
+                            더보기
+                            <span class="arrow"></span>
+                        </label>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- 더보기 버튼 (ul 밖이지만 한 줄에 보이게) -->
+        <input type="checkbox" id="snb-more">
+        <div class="snb-wrap">
+            <div class="snb">
+                <div class="inner-box body-wrap">
+                    <div class="menu-wrap">
+                        <div class="menu-box">
+                            <dl>
+                                <dt><a href="./404.html">도미노 서비스</a></dt>
+                                <dd><a href="./404.html">매니아 혜택</a></dd>
+                                <dd><a href="./404.html">도미노 모멘트</a></dd>
+                                <dd><a href="./404.html">퀵오더</a></dd>
+                                <dd><a href="./404.html">단체주문 서비스</a></dd>
+                            </dl>
+                        </div>
+                        <div class="menu-box">
+                            <dl>
+                                <dt><a href="./costomer_compliment.html">고객센터</a></dt>
+                                <dd><a href="./404.html">자주하는 질문</a></dd>
+                                <dd><a href="./costomer_compliment.html">문의&#47;칭찬하기</a></dd>
+                                <dd><a href="./404.html">문의 내역&#47;답변</a></dd>
+                            </dl>
+                        </div>
+                        <div class="menu-box">
+                            <dl>
+                                <dt><a href="./notification_news.html">회사소개</a></dt>
+                                <dd><a href="./notification_news.html">한국도미노피자</a></dd>
+                                <dd><a href="./404.html">광고갤러리</a></dd>
+                                <dd><a href="./404.html">사회공헌활동</a></dd>
+                                <dd><a href="./404.html">가맹점 모집</a></dd>
+                                <dd><a href="./404.html">인재채용</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="notice-box">
+                        <dl>
+                            <dt><a href="./404.html">공지사항</a></dt>
+                            <dd><a href="./404.html">&#45;도미노뉴스</a></dd>
+                            <dd><a href="./404.html">&#45;보도자료</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /1Depth Menu -->
+    </header>
+    <!-- Contents -->
+    <main>
+        <!-- BxSlider1 -->
+        <div id="bxslider_wrap">
+            <ul class="bxslider">
+                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/back1.jpg" alt="슬라이드01"></a></li>
+                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/back2.jpg" alt="슬라이드02"></a></li>
+                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/back3.jpg" alt="슬라이드03"></a></li>
+                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/back4.jpg" alt="슬라이드04"></a></li>
+                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/back5.jpg" alt="슬라이드05"></a></li>
+            </ul>
+            <div class="slider-status">
+                <span id="slideIndex">1 / 5</span>
+                <button id="toggleBtn">❚❚</button>
+            </div>
+        </div>
+        <!-- /BxSlider1 -->
+        <!-- 주문하기 -->
+        <div class="body-wrap">
+            <div class="order-item-wrap">
+                <div class="item">
+                    <a href="#" onclick="showComingSoonMessage(); return false;">
+                        <img src="./images/Delivery.png" alt="오토바이아이콘">
+                        <div class="arrow-wrap">
+                            <span class="text">배달 주문</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
+                    <p>등급별 최대 30%</p>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="showComingSoonMessage(); return false;">
+                        <img src="./images/Take-out.png" alt="가게아이콘">
+                        <div class="arrow-wrap">
+                            <span class="text2">포장 주문</span>
+                            <span class="arrow2"></span>
+                        </div>
+                    </a>
+                    <p>등급별 최대 40%</p>
+                </div>
+                <div class="item">
+                    <a href="#" onclick="showComingSoonMessage(); return false;">
+                        <img src="./images/QuickOrder.png" alt="퀵오더아이콘">
+                        <div class="arrow-wrap">
+                            <span class="text3">퀵오더</span>
+                            <span class="arrow3"></span>
+                        </div>
+                    </a>
+                    <p>
+                        자주 이용하는 메뉴를<br>
+                        더 빠르게 주문해보세요!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /주문하기 -->
+        <!-- 로그인 혜택 -->
+        <article class="login-area">
+            <div class="login-before">
+                <h2>
+                    도미노 피자의 <br>
+                    <span>특별한 매니아 혜택</span><br>
+                    누려보세요!
+                </h2>
+                <div class="login-btn-wrap">
+                    <a href="./login.html">
+                        <button type="submit" id="login">로그인</button>
+                    </a>
+                </div>
+            </div>
+            <div class="member-box">
+                <a href="./login.html"><img src="./images/main_card1.png" alt="혜택1"></a>
+                <a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/main_card2.gif" alt="혜택2"></a>
+                <a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/main_card5.png" alt="혜택3"></a>
+            </div>
+        </article>
+        <!-- BxSlider2 -->
+        <div class="body-wrap">
+            <article id="banner-area">
+                <div class="bottom-banner">
+                    <ul class="bxslider2">
+                        <li><a href="./store_search.html"><img src="./images/spot.jpg" alt="슬라이드01"></a></li>
+                        <li><a href="./franchise.html"><img src="./images/why.jpg" alt="슬라이드02"></a></li>
+                        <li><a><img src="./images/service.jpg" alt="슬라이드03"></a></li>
+                        <li><a><img src="./images/k-ssamjang.jpg" alt="슬라이드04"></a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <!-- /BxSlider2 -->
+        <aside class="sonni">
+            <button class="close-btn">
+                <span></span>
+                <span></span>
+            </button>
+            <img src="./images/sonni.png" alt="손흥민">
+        </aside>
+    </main>
+    <!-- /Contents -->
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="body-wrap">
+            <div class="footer-area">
+                <div class="footer-box">
+                    <div class="footer-order">
+                        <img src="./images/Footer Logo.png" alt="푸터로고">
+                        <span class="tel">1577-3082</span>
+                    </div>
+                    <ul class="footer-contact">
+                        <li><a href="./404.html">이용약관</a></li>
+                        <li><a href="./404.html">개인정보처리방침</a></li>
+                        <li><a href="./404.html">위치기반 서비스</a></li>
+                        <li><a href="./404.html">청소년 보호방침</a></li>
+                        <li><a href="./404.html">영상정보처리기기 운영관리방침</a></li>
+                        <li><a href="./costomer_compliment.html">고객센터</a></li>
+                        <li><a href="./404.html">인재채용</a></li>
+                        <li><a href="./franchise.html">가맹점모집</a></li>
+                        <li><a href="./404.html">단체주문</a></li>
+                    </ul>
+                    <div class="footer-text">
+                        <p>06223 서울특별시 강남구 역삼로25길 35(역삼동, 정오큐브타워) 정오디피케이(주) | 대표이사 : 오광현, 김영훈</p>
+                        <p>사업자등록번호 : 220-81-03371 | 통신판매업신고 : 강남 5064호 | 개인정보 보호책임자 : 윤여진 | 민원 책임자 : 임영길</p>
+                        <p>문의 : webmaster@dominos.co.kr</p>
+                        <p>CopyrightⓒDomino’s Pizza. All rights reserved.</p>
+                        <p class="footer-notice">청오디피케이(주)의 사전 서면동의 없이 도미노피자 사이트(PC,모바일,앱)의 일체의 정보, 콘텐츠 및 UI등을 상업적목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.</p>
+                        <p>도미노피자에서 판매되는 모든 상품은 청오디피케이(주)에서 책임지고 있습니다.</p>
+                    </div>
+                    <div class="footer-content">
+                        <div class="footer-select-lang">
+                            <select id="footer-select-type">
+                                <option value="kor">KOR</option>
+                                <option value="eng">ENG</option>
+                            </select>
+                        </div>
+                        <div class="app-box">
+                            <dl>
+                                <dt>DOWNLOAD APP</dt>
+                                <dd><img src="./images/ios.png" alt="앱스토어"></dd>
+                                <dd><img src="./images/android.png" alt="플레이스토어"></dd>
+                            </dl>
+                        </div>
+                        <div class="sns-box">
+                            <ul>
+                                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/blog.png" alt="블로그"></a></li>
+                                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/insta.png" alt="인스타그램"></a></li>
+                                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/Facebook.png" alt="페이스북"></a></li>
+                                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/Youtube.png" alt="유튜브"></a></li>
+                                <li><a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/Twitter.png" alt="트위터"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="award-area">
+            <div class="award-box">
+                <ul>
+                    <li>
+                        <img src="./images/Award1.png" alt="상장1">
+                        <p>식품안전<br>
+                            경영시스템 인증
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Award2.png" alt="상장2">
+                        <p>지식경제부<br>
+                            우수디자인 선정
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Award3.png" alt="상장3">
+                        <p>2022년 고객이 가장 추천하는 기업<br>
+                            피자전문점 부문 10년 연속 1위
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Award4.png" alt="상장4">
+                        <p>2024년 한국산업 고객만족도<br>
+                            피자전문점 부문 10년 연속 1위
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Award5.png" alt="상장5">
+                        <p>2024 프리미엄브랜드지수<br>
+                            피자전문점 부문 9년 연속 1위 수상
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/Award6.png" alt="상장6">
+                        <p>대학생 1000명이 선택한<br>
+                            2019 올해의 핫 브랜드 캠퍼스 잡앤조이 선정
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./js/coming-soon.js"></script>
+</body>
+</html>

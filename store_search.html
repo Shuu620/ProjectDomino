@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>매장찾기 - 도미노피자</title>
+
+    <!-- 아이콘 및 스타일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+
+    <!-- 기본 Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!-- 페이지 관련 CSS -->
+    <link rel="stylesheet" href="./css/store_search.css">
+
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+
+    <!-- 카카오 지도 API (async, defer 제거!) -->
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=83cb17c6346d90f10a653723345962f4&libraries=services"></script>
+</head>
+<body>
+    <div id="store_search_wrap">
+        <header>
+            <div id="header"></div>     
+        </header>
+        <main id="store_search_main">
+            <!-- gnb -->
+            <div class="store_search_gnb">
+                <h2>매장검색</h2>
+                <p><span class="store_search_gnb_span">홈 &gt; </span>매장검색</p>
+            </div>
+            <!-- /gnb -->
+        
+            <div class="store_search_store">
+                <!-- 검색버튼 -->
+                <div class="store_search_btn_wrap">
+                    <a href="#" onclick="showComingSoonMessage(); return false;" class="store_search_btn_all_store">전체매장 보기</a>
+                </div>
+            </div>  
+            <!-- 지도검색영역 -->
+            <div id="store_search_search_form">
+                <div class="store_search_search_area">
+                    <div class="store_search_store_map_area">
+                        <div class="store_search_search_tab">
+                            <h3 class="store_search_area">지역 검색</h3>
+                            <h3 class="store_search_store_name">매장명</h3>
+                        </div>
+                        <div class="store_search_select_area">
+                            <div id="store_search_region">
+                                <div class="store_search_region">
+                                    <div class="store_search_select_area01">
+                                        <select id="store_search_region_code01">
+                                            <option value="">시/도</option>
+                                            <option value="01" selected>서울</option>
+                                            <option value="02">인천</option>
+                                            <option value="03">경기</option>
+                                            <option value="04">강원</option>
+                                            <option value="05">충남</option>
+                                            <option value="06">충북</option>
+                                            <option value="07">대전</option>
+                                            <option value="08">경남</option>
+                                            <option value="09">경북</option>
+                                            <option value="10">대구</option>
+                                            <option value="11">전남</option>
+                                            <option value="12">전북</option>
+                                            <option value="13">광주</option>
+                                            <option value="14">울산</option>
+                                            <option value="15">부산</option>
+                                            <option value="16">제주</option>
+                                            <option value="17">세종특별자치시</option>
+                                        </select>
+                                    </div>
+                                    <div class="store_search_select_area02">
+                                        <select id="store_search_region_code02">
+                                            <option value="">구/군</option>
+                                            <option value="0111">강남구</option>
+                                            <option value="0110">강동구</option>
+                                            <option value="0117">강북구</option>
+                                            <option value="0124">강서구</option>
+                                            <option value="0120">관악구</option>
+                                            <option value="0118">광진구</option>
+                                            <option value="0121">구로구</option>
+                                            <option value="0122">금천구</option>
+                                            <option value="0115">노원구</option>
+                                            <option value="0108">도봉구</option>
+                                            <option value="0106">동대문구</option>
+                                            <option value="0123">동작구</option>
+                                            <option value="0104">마포구</option>
+                                            <option value="0103">서대문구</option>
+                                            <option value="0113">서초구</option>
+                                            <option value="0109">성동구</option>
+                                            <option value="0112">성북구</option>
+                                            <option value="0114">송파구</option>
+                                            <option value="0125">양천구</option>
+                                            <option value="0119">영등포구</option>
+                                            <option value="0116">용산구</option>
+                                            <option value="0105">은평구</option>
+                                            <option value="0102">종로구</option>
+                                            <option value="0101" selected>중구</option>
+                                            <option value="0107">중랑구</option>
+                                        </select>
+                                    </div>
+                                    <div class="store_search_search_btn">
+                                        <button type="button" class="store_search_btn_search">
+                                            <img src="./images/search.png" alt="검색">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="store_search_search_option">
+                                    <div class="store_search_switch_btn">
+                                        <label class="store_search_switch">
+                                            <input type="checkbox" id="store_search_switch" />
+                                            <a class="store_search_slider" id="store_search_schPrmt">
+                                                <span class="store_search_text store_search_off">OFF</span>
+                                                <span class="store_search_text store_search_on">ON</span>
+                                            </a>
+                                        </label>
+                                        <p>특별할인 진행 전체 매장</p>
+                                    </div>
+                                    <div class="store_search_d-notice">* 자사 및 매장별 프로모션은 중복할인이 불가합니다.</div>
+                                </div>
+                            </div>
+                            <div class="store_search_search_result01">
+                                <div class="store_search_result_left">
+                                    <h4>명동점 02-2264-3081</h4>
+                                    <h5><img src="./images/loca.png" alt="위치">서울특별시 중구 마른내로 47 (초동)</h5>
+                                    <div class="store_search_result_btn">
+                                        <button class="store_search_view_details">상세보기</button>
+                                        <button class="store_search_d_to_d">방문포장</button>
+                                    </div>
+                                </div>
+                                <div class="store_search_result_right">
+                                    <div class="store_search_online">
+                                        <img src="./images/online.png" alt="온라인">
+                                        <div class="store_search_online_text">
+                                            <p>온라인</p>
+                                            <p>방문포장</p>
+                                            <p>30%</p>
+                                        </div>
+                                    </div>
+                                    <div class="store_search_offline">
+                                        <img src="./images/offline.png" alt="오프라인">
+                                        <div class="store_search_offline_text">
+                                            <p>오프라인</p>
+                                            <p>방문포장</p>
+                                            <p>30%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store_search_search_result02">
+                                <div class="store_search_result_left">
+                                    <h4>신당점 02-2233-3082</h4>
+                                    <h5><img src="./images/loca.png" alt="위치">서울특별시 중구 다산로 156 (신당동)</h5>
+                                    <div class="store_search_result_btn">
+                                        <button class="store_search_view_details">상세보기</button>
+                                        <button class="store_search_d_to_d">방문포장</button>
+                                    </div>
+                                </div>
+                                <div class="store_search_result_right">
+                                    <div class="store_search_online">
+                                        <img src="./images/online.png" alt="온라인">
+                                        <div class="store_search_online_text">
+                                            <p>온라인</p>
+                                            <p>방문포장</p>
+                                            <p>30%</p>
+                                        </div>
+                                    </div>
+                                    <div class="store_search_offline">
+                                        <img src="./images/offline.png" alt="오프라인">
+                                        <div class="store_search_offline_text">
+                                            <p>오프라인</p>
+                                            <p>방문포장</p>
+                                            <p>30%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>    
+                </div>
+                <!-- 지도 view -->
+                <div class="store_search_search_map">
+                    <div id="store_search_map"></div>
+                </div>
+            </div>
+            <!-- /지도검색영역 -->
+        </main>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header").load('./header.html');
+            $("#footer").load('./footer.html', function() {
+                // header/footer 로딩 후 맵 실행
+                if (window.kakao && window.kakao.maps) {
+                    initMap();
+                }
+            });
+
+            const script = document.createElement('script');
+            script.src = './header.js';
+            document.body.appendChild(script);
+        });
+    </script>
+<script src="./js/store_search.js"></script>
+<script src="./js/coming-soon.js"></script>
+</body>
+</html>

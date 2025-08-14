@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+#ecoupon_instruction_wrap{
+    width: 1200px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+}
+.ecoupon_instruction_container {
+    border-bottom: 2px solid #000;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+.ecoupon_instruction_container>.ecoupon_instruction_w-gnb>h2 {
+    font-size: 31px;
+}
+.ecoupon_instruction_w-gnb {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 31px;
+}
+.ecoupon_instruction_w-gnb_li {
+    display: flex;
+}
+.ecoupon_instruction_w-gnb_li>li {
+    margin-left: 8px;
+}
+.ecoupon_instruction_w-gnb_li>li>a {
+    color: #888;
+}
+
+.ecoupon_instruction_menu>ul {
+    display: flex;
+}
+.ecoupon_instruction_menu>ul>li {
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(136, 136, 136);
+    margin-right: 20px;
+}
+.ecoupon_instruction_menu>ul>li:nth-child(2) {
+    padding-left: 0;
+    border-left: 1px solid rgb(136, 136, 136);
+    color: #000;
+    padding-left: 20px;
+}
+
+
+.ecoupon_instruction_w-gnb_li {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+.ecoupon_instruction_e-cupon {
+    margin-top: 20px;
+}
+
+
+
+
+.ecoupon_instruction_ul-wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.ecoupon_instruction_wq-gnb {
+    display: flex;
+}
+.ecoupon_instruction_wq-gnb>li>a {
+    width: 398px;
+    height: 46px;
+    text-align: center;
+    background: rgb(245, 245, 245);
+    color: rgb(136, 136, 136);
+    line-height: 46px;
+}
+.ecoupon_instruction_wq-gnb>li:nth-of-type(1)>a{
+    background: rgb(17, 17, 17);
+}
+.ecoupon_instruction_wq-gnb>li:nth-of-type(2)>a:hover,
+.ecoupon_instruction_wq-gnb>li:nth-of-type(3)>a:hover{
+    background: rgb(245, 245, 245);
+    color: rgb(17, 17, 17);
+}
+
+
+
+
+.ecoupon_instruction_img-box {
+    margin-bottom: 80px;
+}
+.ecoupon_instruction_img-box>img {
+    width: 1200px;
+    height: 1038px;
+}
+
+
+
+.ecoupon_instruction_w-info-wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid rgb(232, 232, 232);
+    border-bottom: 1px solid rgb(232, 232, 232);
+    display: flex;
+}
+
+.ecoupon_instruction_title-type2 {
+    font-size: 16px;
+    color: rgb(17, 17, 17);
+    line-height: 180px;
+}
+
+
+
+.ecoupon_instruction_title-wrap {
+    width: 300px;
+    height: 20px;
+}
+
+.ecoupon_instruction_title-type2 {
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.ecoupon_instruction_cont-wrap {
+    width: 900px;
+    height: 80px;
+}
+
+
+.ecoupon_instruction_list-text-w3{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(138, 138, 138);
+    padding-bottom: 8px;
+}
+
+
+.ecoupon_instruction_w-btn-wrap{
+    margin-top: 60px;
+}
+.ecoupon_instruction_w-btn {
+    display: block;
+    width: 220px;
+    height: 62px;
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(255, 20, 60);
+    color: #fff;
+    line-height: 60px;
+    font-size: 16px;
+    margin-bottom: 47px;
+}

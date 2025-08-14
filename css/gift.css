@@ -1,0 +1,271 @@
+@charset "utf-8";
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu_header {
+    margin-top: 50px;
+    margin-bottom: 56px;
+}
+.menu_header .menu_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.menu_header .menu_title h2 {
+    font-size: 32px;
+}
+.menu_header .menu_title p {
+    font-size: 14px;
+}
+.menu_header .menu_teb ul {
+    display: flex;
+    border-bottom: 2px solid #000;
+}
+.menu_header .menu_teb ul li{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8f918f;
+    padding: 2px 0;
+    margin-bottom: 15px;
+}
+.menu_header .menu_teb ul li::after {
+    content: "|";
+    color: #dddddd;
+    margin: 2px 12px;
+    font-size: 12px;
+}
+.menu_header .menu_teb ul li:last-child::after {
+    display: none;
+}
+.menu_header .menu_teb ul li input {
+    display: none;
+}
+input[type="checkbox"]:checked + span {
+    color: #000;
+}
+.menu_header .menu_teb ul li:first-child {
+    padding-left: 0;
+}
+/* 피자 이미지 크기 */
+.pizza_list li img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 12px;
+}
+.section {
+    width: 100%;
+}
+.section_title {
+    position: relative;
+}
+.section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 56px;
+}
+.Significance {
+    color: #ff752d;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+.Significance span {
+    font-size: 18px;
+}
+.gift_info {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dddddd;
+}
+.gift_info div:first-child {
+    margin-right: 80px;
+}
+.gift_info ul li {
+    color: #8f918f;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    list-style: disc;
+}
+.pizza_list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+.pizza_list li {
+    width: 280px;
+    min-height: 459px;
+    margin: 0 13.333px;
+    margin-bottom: 66px;
+    position: relative;
+}
+.pizza_list li>p {
+    font-size: 15px;
+    line-height: 1.3rem;
+}
+.pizza_list li:first-child {
+    margin-left: 0;
+}
+.pizza_list li:nth-child(4n) {
+    margin-right: 0;
+}
+.pizza_list li:nth-child(5n) {
+    margin-left: 0;
+}
+.pizza_name_div {
+    display: flex;
+    flex-flow: row wrap;
+}
+.pizza_name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+/* 정가 표시 */
+s {
+    font-size: 13px;
+    color: #888888;
+    font-weight: normal;
+}
+.size {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff143c;
+    margin-right: 10px;
+}
+.cost {
+    display: flex;
+    margin-bottom: 24px;
+}
+.cost p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 24px;
+    position: absolute;
+    bottom: 62px;
+}
+/* 피자 수량, 담기 버튼 */
+.btns {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 46px;
+}
+.minus_btn,
+.plus_btn {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 200;
+    background: #fff;
+}
+.minus_btn{
+    font-size: 40px;
+    line-height: 1;
+}
+.quantity_btn {
+    display: flex;
+}
+.quantity_btn button {
+    width: 46px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.quantity_btn div {
+    width: 78px;
+    line-height: 46px;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.cart_btn {
+    width: 98px;
+    background-color: #ff143c;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+.pizza_info {
+    color: #8f918f;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+/* 피자이름 옆 알림 */
+.alert {
+    background-color: #ff143c;
+    color: #fff;
+    font-size: 8px;
+    border-radius: 2px;
+    padding: 4px 6px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 6px;
+}
+.menu_info {
+    display: flex;
+    border-top: 1px solid #888888;
+}
+.menu_info div {
+    padding: 50px 0 100px 0;
+    width: 50%;
+}
+.menu_info div ul {
+    padding-left: 20px;
+}
+.menu_info div:nth-child(1) {
+    color: #8f918f;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.menu_info div:nth-child(2) {
+    text-align: center;
+    font-size: 14px;
+    color: #8f918f;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+}
+.menu_info div:nth-child(2) p {
+    padding-bottom: 32px;
+}
+.menu_info div:nth-child(2) button {
+    width: 284px;
+    height: 50px;
+    background: #222222;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    flex-flow: column;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.menu_info div:first-child p,
+.menu_info div:first-child ul {
+    border-right: 1px solid #eeeeee;
+}
+.menu_info div ul li{
+    list-style: disc;
+}
+/* 데일리 피자 소개 */
+.daliy_pizza_info {
+    color: #5e5e5e;
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}

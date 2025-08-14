@@ -1,0 +1,388 @@
+#costomer_compliment_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 13px;
+    font-family: 'Noto Sans KR';
+}
+
+#costomer_compliment_main {
+    position: relative;
+}
+
+/* gnb */
+#costomer_compliment_gnb {
+    border-bottom: 2px solid #000;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+.costomer_compliment_gnb{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 31px;
+}
+.costomer_compliment_gnb>h2 {
+    font-size: 31px;
+}
+.costomer_compliment_gnb_span{
+    color: #888;
+}
+.costomer_compliment_sub_gnb {
+    display: flex;
+}
+.costomer_compliment_sub_gnb p {
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-right: 1px solid rgb(136, 136, 136);
+    color: rgb(136, 136, 136);
+}
+.costomer_compliment_sub_gnb p:nth-child(1){
+    padding-left: 0;
+}
+.costomer_compliment_sub_gnb p:nth-child(2){
+    color: #000;
+}
+.costomer_compliment_sub_gnb p:nth-child(3){
+    border-right: none;
+}
+
+/* notice */
+.costomer_compliment_notice {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.costomer_compliment_notice h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.costomer_compliment_notice h4 {
+    margin-top: 21px;
+    font-size: 14px;
+    color: rgb(255, 20, 60);
+    margin-bottom: 32px;
+}
+/* /notice */
+
+/* collect_info */
+.costomer_compliment_collect_info{
+    border-bottom: 2px solid #000;
+}
+.costomer_compliment_collect_info>label {
+    display: block; 
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    position: relative;
+    width: fit-content; /* textarea 너비에 맞게 */
+}
+textarea#costomer_compliment_privacyNotice {
+    width: 100%;
+    padding: 30px;
+    border: none;
+    resize: none;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: rgb(245, 245, 245);
+    color: rgb(149, 149, 149);
+    text-align: left;
+    white-space: pre-wrap;
+    margin-bottom: 64px;
+}
+
+
+/* 공통 스타일 */
+.costomer_compliment_radio_styled {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    
+}
+.costomer_compliment_radio_styled label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.costomer_compliment_radio_styled input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.costomer_compliment_radio_styled input[type="radio"]:checked {
+    border-color: rgb(255, 20, 60);
+}
+.costomer_compliment_radio_styled input[type="radio"]:checked::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: rgb(255, 20, 60);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+/* ✨ 위치별 개별 스타일 */
+.costomer_compliment_radio_styled_agree {
+    position: absolute;
+    right: 30px;   
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+
+
+
+.costomer_compliment_warning {
+    font-size: 14px;
+    color: rgb(255, 20, 60);
+}
+.costomer_compliment_warning h3 {
+    line-height: 20px;
+}
+
+
+.costomer_compliment_download_notice button {
+    width: 260px;
+    height: 50px;
+    background: rgb(34, 34, 34);
+    color: rgb(248, 245, 248);
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#costomer_compliment_form {
+    font-size: 16px;
+    color: rgb(30, 30, 30);
+    margin-bottom: 80px;
+}
+.costomer_compliment_form {
+    height: 102px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    line-height: 102px;
+}
+.costomer_compliment_form label:first-child{
+    padding-left: 41px;
+}
+.costomer_compliment_form>input{
+    height: 40px;
+}
+.costomer_compliment_form>select{
+    height: 40px;
+}
+.costomer_compliment_form input{
+    margin-top: 31px;
+}
+.costomer_compliment_form input,
+.costomer_compliment_form select {
+    border: 1px solid rgb(221, 221, 221);
+    padding-left: 20px;
+    color: rgb(136, 136, 136);
+}
+
+
+input#costomer_compliment_name{
+    width: 328px;
+    margin-left: 160px;
+}
+
+.costomer_compliment_phone>select,
+.costomer_compliment_phone>input{
+    width: 158px;
+    margin-right: 8px;
+    font-family: 'Roboto';
+}
+.costomer_compliment_phone>select {
+    margin-left: 146px;
+}
+
+
+.costomer_compliment_email input,
+.costomer_compliment_email select {
+    width: 157px;
+    margin-right: 9px;
+}
+.costomer_compliment_email input:nth-of-type(1) {
+    margin-left: 161px;
+}
+.costomer_compliment_email input:nth-of-type(2) {
+    margin-left: 8px;
+}
+
+.costomer_compliment_password input{
+    width: 210px;
+    margin-left: 146px;
+}
+.costomer_compliment_password_chk input{
+    width: 210px;
+    margin-left: 112px;
+}
+
+.costomer_compliment_category select,
+.costomer_compliment_select_store select {
+    width: 218px;
+    margin-right: 8px;
+}
+.costomer_compliment_category select:nth-of-type(1){
+    margin-left: 148px;
+}
+.costomer_compliment_select_store select:nth-of-type(1){
+    margin-left: 158px;
+}
+
+.costomer_compliment_order_number input {
+    margin-left: 158px;
+    width: 328px;
+}
+
+
+.costomer_compliment_subject input {
+    margin-left: 176px;
+    width: 648px;
+}
+
+.costomer_compliment_form_ta {
+    height: 355px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    display: flex;
+}
+.costomer_compliment_form_ta label {
+    line-height: 72px;
+    padding-left: 40px;
+    width: 253px;
+}
+#costomer_compliment_content {
+    border: 1px solid rgb(221, 221, 221);
+    padding-left: 20px;
+    color: rgb(136, 136, 136);
+    width: 640px;
+    height: 293px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.costomer_compliment_files{
+    height: 260px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.costomer_compliment_files_attachment {
+    display: flex;
+    margin-top: 30px;
+}
+.costomer_compliment_files_attachment>label {
+    margin-left: 41px;
+    margin-right: 158px;
+    line-height: 42px;
+}
+
+.costomer_compliment_form_file>p {
+    display: block;
+    margin-left: 254px;
+    color: rgb(146, 146, 146);
+}
+
+
+
+.costomer_compliment_files input:nth-of-type(odd) {
+    border: 1px solid rgb(221, 221, 221);
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: rgb(136, 136, 136);
+    height: 40px;
+    width: 328px;
+    margin-right: 7px;
+}
+
+.costomer_compliment_file_label {
+  display: inline-block;
+  width: 120px;
+  line-height: 42px;
+  background: rgb(34, 34, 34);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  height: 42px;
+}
+
+.costomer_compliment_file_label:hover {
+  background: #555;
+}
+
+.costomer_compliment_radio_styled_reply>label:nth-child(2) {
+    margin-left: 100px;
+}
+
+
+
+
+.costomer_compliment_essential {
+    color: rgb(255, 20, 60) !important;
+}
+.costomer_compliment_reset_btn {
+    background: rgb(34, 34, 34);
+    color: rgb(248, 245, 248);
+    margin-right: 12px;
+    margin-left: 374px;
+}
+.costomer_compliment_submit_btn {
+    background: rgb(255, 20, 60);
+    color: rgb(248, 245, 248);
+    border: 0;
+}
+.costomer_compliment_form_btn {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.costomer_compliment_form_btn button {
+    width: 220px;
+    height: 62px;
+}
+
+/* 회원가입 수정 추가 css */
+.sign_step {
+    display: flex;
+    justify-content: center;
+}
+.sign_step p {
+    font-size: 16px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+}
+.sign_step p:first-child {
+    color: #888;
+}
+.sign_step p:last-child {
+    color: #888;
+    border-bottom: 1px solid #ddd;
+    padding-left: 15px;
+}
+.sign_step span {
+    color: #888;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+}
+.sign_step span:last-child {
+    padding-right: 0;
+}
+main {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* 1. 스와이퍼 페이퍼 영역 */
+#portfolio {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#000,#202020,#c1c1c1);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* A. 스와이퍼 최상위 구조 클래스 */
+.swiper-container {
+    padding-top: 100px;
+    padding-bottom: 84px;
+}
+/* C-1. 스와이퍼 될 각각 내용들 */
+.swiper-slide {
+    width: 1100px;
+    height: 614px;
+    background-color: #959595;
+}
+.swiper-slide {
+    /* 플렉스 */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    outline: none;
+    border: none;
+}
+
+.swiper-slide h3 {
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+
+.swiper-slide .btn {
+    margin-top: 440px;
+}
+
+.swiper-slide .btn button {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.swiper-slide .btn button:hover {
+    background-color: #fff;
+    color: #454545;
+}
+
+

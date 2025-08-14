@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 기본 Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 페이지 관련 CSS -->
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/header.js"></script>
+    <!-- 페이지 관련 JS -->
+</head>
+<body>
+<header id="header">
+    <div class="top-wrap">
+        <a href="./index.html" class="btn-logo"><img src="./images/Main Logo.png" alt="도미노피자로고"></a>
+       
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="./login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="./sign_up.html">회원가입</a>
+                </li>
+                <li>
+                    <select id="select-type">
+                        <option value="kor">KOR</option>
+                        <option value="eng">ENG</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 1Depth Menu -->
+    <div class="gnb-wrap">
+        <div class="gnb">
+            <ul>
+                <li><a href="./menu.html">메뉴</a></li>
+                <li><a href="./ecoupon_order.html">e-쿠폰</a></li>
+                <li><a href="./gift.html">상품권 선물</a></li>
+                <li><a href="./eventAff_event.html">이벤트·제휴</a></li>
+                <li><a href="./store_search.html">매장검색</a></li>
+                <li><a href="./franchise.html">가맹점모집</a></li>
+                <li>
+                    <label for="snb-more" class="more-label">
+                        더보기
+                        <span class="arrow"></span>
+                    </label>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <!-- 더보기 버튼 (ul 밖이지만 한 줄에 보이게) -->
+    <input type="checkbox" id="snb-more">
+    <div class="snb-wrap">
+        <div class="snb">
+            <div class="inner-box">
+                <div class="menu-wrap">
+                    <div class="menu-box">
+                        <dl>
+                            <dt><a href="./404.html">도미노 서비스</a></dt>
+                            <dd><a href="./404.html">매니아 혜택</a></dd>
+                            <dd><a href="./404.html">도미노 모멘트</a></dd>
+                            <dd><a href="./404.html">퀵오더</a></dd>
+                            <dd><a href="./404.html">단체주문 서비스</a></dd>
+                        </dl>
+                    </div>
+                    <div class="menu-box">
+                        <dl>
+                            <dt><a href="./costomer_compliment.html">고객센터</a></dt>
+                            <dd><a href="./404.html">자주하는 질문</a></dd>
+                            <dd><a href="./costomer_compliment.html">문의&#47;칭찬하기</a></dd>
+                            <dd><a href="./404.html">문의 내역&#47;답변</a></dd>
+                        </dl>
+                    </div>
+                    <div class="menu-box">
+                        <dl>
+                            <dt><a href="./notification_news.html">회사소개</a></dt>
+                            <dd><a href="./notification_news.html">한국도미노피자</a></dd>
+                            <dd><a href="./404.html">광고갤러리</a></dd>
+                            <dd><a href="./404.html">사회공헌활동</a></dd>
+                            <dd><a href="./franchise.html">가맹점 모집</a></dd>
+                            <dd><a href="./404.html">인재채용</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="notice-box">
+                    <dl>
+                        <dt><a href="./404.html">공지사항</a></dt>
+                        <dd><a href="./404.html">&#45;도미노뉴스</a></dd>
+                        <dd><a href="./404.html">&#45;보도자료</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /1Depth Menu -->
+</header>
+</body>
+</html>

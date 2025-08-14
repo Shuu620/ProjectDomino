@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품권 선물</title>
+    <!-- 아이콘 및 스타일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+    <!-- 기본 Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 페이지 관련 CSS -->
+    <link rel="stylesheet" href="./css/gift.css">
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- 페이지 관련 JS -->
+    <script src="./js/gift.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header"></div>
+        </header>
+        <div class="menu_header">
+            <div class="menu_title">
+                <h2>상품권 선물</h2>
+                <p><span style="color: #8f918f;">홈 > 상품권 선물 ></span> 모바일상품권(도미노콘)</p>
+            </div>
+            <nav class="menu_teb">
+                <ul>
+                    <li>
+                        <label><input type="checkbox" checked><span>모바일상품권(도미노콘)</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>금액상품권</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>지류상품권</span></label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox"><span>상품권 사용 안내</span></label>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="gift_info">
+            <div>
+                <img src="./images/sail_info.jpg">
+            </div>
+            <div>
+                <ul>
+                    <li>도미노콘 구입은 홈페이지/모바일 웹/앱 에서 구입 가능</li>
+                    <li>도미노콘은 온라인 주문 에만 사용 가능 (전화주문 제외)</li>
+                    <li>도미노콘 유효기간은 구입일로부터 &lt;1년&gt; 이내 이용 가능</li>
+                    <li>구매 장수 제한 없이 할인 적용 가능</li>
+                    <li>선물시 카드 테마 선택 및 메시지 쓰기 가능</li>
+                    <li>
+                        모든 도미노콘(단품,세트) 내 피자는 오리지널 도우 기준<br>
+                        ※ 예외 : 아보카도 새우 피자는 슈퍼시드 화이버 함유 도우 제품<br>
+                        ※ 예외 : 치즈 크레이프 샌드 피자는 샌드 도우 제품
+                    </li>
+                    <li>사용 방법 및 기타 문의처 : 080-860-3082</li>
+                </ul>
+            </div>
+
+        </section>
+        <!-- 세트 section -->
+        <section class="section">
+            <div class="section_title">
+                <h3>세트</h3>
+                <p class="Significance"><span>ⓘ</span>세트 이용 시 유의사항</p>
+            </div>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="“클래식하게 즐겨요 세트”">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">“클래식하게 즐겨요 세트”</p>
+                    </div>
+                    <p>슈퍼 슈프림L & 코카-콜라 1.25L</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>25,670원&nbsp;<s>30,200원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="“불맛으로 행복해요 세트”">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">“불맛으로 행복해요 세트”</p>
+                    </div>
+                    <p>와일드 와일드 웨스트 스테이크L & 코카-콜라 1.25L</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>30,770원&nbsp;<s>36,200원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="“4가지 행복 세트”">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">“4가지 행복 세트”</p>
+                    </div>
+                    <p>베스트 콰트로L & 코카-콜라1.25L</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>33,320원&nbsp;<s>39,200원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="“두 가지 맛(M) 세트”">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">“두 가지 맛(M) 세트”</p>
+                    </div>
+                    <p>와일드 와일드 웨스트 스테이크+블랙타이거 슈림프 하프앤하프M & 코카-콜라 1.25L</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>26,605원&nbsp;<s>31,300원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="“즐거움을 함께 해요 세트”">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">“즐거움을 함께 해요 세트”</p>
+                    </div>
+                    <p>블랙타이거 슈림프L & New 치즈 볼로네즈 스파게티 & 코카-콜라 1.25L</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>41,650원&nbsp;<s>49,000원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="“감사를 전해요 세트”">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">“감사를 전해요 세트”</p>
+                    </div>
+                    <p>포테이토 + 코카-콜라1.25L</p>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>25,670원&nbsp;<s>30,200원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+        </section>
+        <!-- 단품 section -->
+        <section class="section">
+            <div class="section_title">
+                <h3>단품</h3>
+                <p class="Significance"><span>ⓘ</span>단품 이용 시 유의사항</p>
+            </div>
+            <ul class="pizza_list">
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] K-쌈장 채끝스테이크">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] K-쌈장 채끝스테이크</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>28,815원&nbsp;<s>33,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] Sonny K-Rib&치즈">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] Sonny K-Rib&치즈</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>28,815원&nbsp;<s>33,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 와일드 와일드 웨스트 스테이크">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] 와일드 와일드 웨스트 스테이크</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>28,815원&nbsp;<s>33,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 블록버스터4">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] 블록버스터4</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>31,365원&nbsp;<s>36,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 뉴욕 오리진">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] 뉴욕 오리진/p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>25,415원&nbsp;<s>29,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 블랙타이거 슈림프">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] 블랙타이거 슈림프</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>31,365원&nbsp;<s>36,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 리얼불고기">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] K-쌈장 채끝스테이크</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>25,415원&nbsp;<s>29,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 우리 고구마">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] 우리 고구마</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>26,265원&nbsp;<s>30,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+                <li style="margin-left: 0;">
+                    <img src="images/new_pizza01.jpg" alt="[모바일] 포테이토">
+                    <div class="pizza_name_div">
+                        <p class="pizza_name">[모바일] 포테이토</p>
+                    </div>
+                    <div class="cost">
+                        <p>
+                            <span class="size">15%</span>23,715원&nbsp;<s>27,900원</s>
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <div class="quantity_btn">
+                            <button class="minus_btn">-</button>
+                            <div class="count">1</div>
+                            <button class="plus_btn">+</button>
+                        </div>
+                        <button class="cart_btn">담기</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header").load('./header.html');
+            $("#footer").load('./footer.html');
+
+            const script = document.createElement('script');
+            script.src = './header.js';
+            document.body.appendChild(script);
+        })
+    </script>    
+    <script src="./js/coming-soon.js"></script>
+</body>
+</html>

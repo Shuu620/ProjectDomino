@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인- 도미노피자</title>
+    <!-- 아이콘 및 스타일 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="apple-touch-icon=precomposeds" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/font.css"/>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="login_wrap">
+        <header>
+            <div id="header"></div> 
+        </header>
+        <div id="login_container">
+            <div class="login_title-wrap"> 
+                <h2 class="login_page-title">로그인</h2>
+                <div class="login_depth-area">
+                    <ol>
+                        <li><a href="./index.html">홈</a></li>
+                        <li><strong>>&nbsp; 로그인</strong></li>
+                    </ol>
+                </div>
+            </div> 
+            <section id="login_content">
+                <div class="login_content-wrap">
+                    <div class="login_innerbox"> <!-- 이너박스 -->
+                        <article class="login_login">
+                            <div class="login_tab-type5 login_js_tab">
+                                <h3 class="login_active"><a href="./login.html">회원로그인</a></h3>
+                                <h3 class="non_member_order"><a href="#" onclick="showComingSoonMessage(); return false;">비회원 주문</a></h3>
+                            </div>
+
+                            <div class="login_login-wrap">
+                                <form id="login_loginFrm" name="login_loginFrm" action="" method="post">
+                                    <div class="login_form-item">
+                                        <input type="text" name="login_id" id="login_id" maxlength="20" placeholder="아이디" value="">
+                                    </div>
+                                    <div class="login_form-item">
+                                        <input type="password" placeholder="비밀번호" name="login_passwd" id="passwd" maxlength="20">
+                                    </div>
+                                    <div class="login_chk-item">
+                                        <div class="login_chk-box login_v4">
+                                            <input type="checkbox" id="login_idcheck">
+                                            <label class="login_checkbox" for="login_idcheck"></label>
+                                            <label for="login_idcheck">아이디저장</label>
+                                        </div>
+                                        <div class="btn-member-wrap">
+                                            <span><a href="#" onclick="showComingSoonMessage(); return false;">아이디 찾기</a></span>
+                                            <span><a href="#" onclick="showComingSoonMessage(); return false;">비밀번호 찾기</a></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="login_btn-wrap">
+                                        <a href="./login.html" class="login_btn-type login_v4">로그인</a>
+                                    </div>
+                                    <div class="login_btn-wrap">
+                                        <a href="./sign_up.html" class="btn-type-brd5">회원가입</a>
+                                    </div>
+                                    
+                                    <div class="login_btn-sns-wrap">
+                                        <div class="login_title-wrap2">
+                                            <div class="login_title-type">소셜 간편 로그인</div>
+                                        </div>
+                                        <ul class="login_btn-sns-list">
+                                            <li class="login_btn-sns-item login_btn-kakao">
+                                                <a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/loginKakao.png" alt="카카오">카카오</a>
+                                            </li>
+                                            <li class="login_btn-sns-item login_btn-t">
+                                                <a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/loginT.png" alt="T">T아이디</a>
+                                            </li>
+                                            <li class="login_btn-sns-item login_btn-naver">
+                                                <a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/loginNaver.png" alt="네이버">네이버</a>
+                                            </li>
+                                            <li class="login_btn-sns-item login_btn-apple">
+                                                <a href="#" onclick="showComingSoonMessage(); return false;"><img src="./images/loginApple.png" alt="Apple">Apple</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </article>
+                    </div> <!-- /이너박스 -->
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header").load('./header.html');
+            $("#footer").load('./footer.html');
+
+            const script = document.createElement('script');
+            script.src = './header.js';
+            document.body.appendChild(script);
+        })
+    </script>
+    <script src="./js/coming-soon.js"></script>
+</body>
+</html>
