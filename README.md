@@ -92,13 +92,13 @@ store_search.html — 매장찾기
 ## 🚀 실행 방법
 
 ### 1) 로컬에서 실행
-## 프로젝트 클론
+프로젝트 클론
 git clone https://github.com/Shuu620/ProjectDomino.git
 
-## 폴더 이동
+폴더 이동
 cd ProjectDomino
 
-## index.html 브라우저에서 열기
+index.html 브라우저에서 열기
 
 ### 2) VSCode Live Server 사용
 VSCode에서 프로젝트 폴더 열기
@@ -111,7 +111,16 @@ index.html 파일에서 Open with Live Server
 배포 링크: https://Shuu620.github.io/ProjectDomino/
 
 ### 📸 스크린샷
-메인 페이지	메뉴 페이지	장바구니
+Main
+![main](https://github.com/user-attachments/assets/3f76c541-4ec1-400e-8597-55674b14b948)
+Menu
+![menu](https://github.com/user-attachments/assets/de7b4d9f-d72b-47f1-9890-a413b825c367)
+Event
+![event](https://github.com/user-attachments/assets/3b103601-da31-4229-9565-b2c97b0b16d1)
+매장검색
+![store_search](https://github.com/user-attachments/assets/9b556706-6dfe-4092-ae86-17b71efe9e59)
+회사소개
+![introduce_company](https://github.com/user-attachments/assets/5a477077-ebe6-4c21-85e4-6a9606537d64)
 
 ### 📚 학습 포인트
 전자상거래 UI 패턴 이해
